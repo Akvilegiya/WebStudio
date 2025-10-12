@@ -1,7 +1,24 @@
-.akvi {
-    text-decoration-color: blue;
+.base {
+    background-color: rgb(56, 56, 56); 
 }
 
-.b {
-    font-size:15px
+.family {
+    color: rgb(255, 255, 255);
 }
+.button  {
+    color: blue;
+}
+/* я гризу  */
+footer { 
+    background-color: rgb(39, 38, 38); 
+}
+address {
+    color: rgb(255, 255, 255);
+}
+body {
+  font-family: 'Roboto'
+}
+
+   
+
+
