@@ -2,16 +2,12 @@
   background: rgb(56, 56, 56);
   width: 1200px;
   height: 600px;
-  top: 80px;
 }
 
 footer {
   background-color: rgb(39, 38, 38);
   width: 1200;
   height: 252;
-  top: 2094px;
-  opacity: 1;
-
 }
 
 address {
@@ -19,22 +15,13 @@ address {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
-}
-
-.headerlist {
-  font-size: 14px;
-  width: 500px;
-
-}
-
-.secheaderlist {
-  font-size: 14px;
-  width: 500px;
+  width: 145px;
+  height: 31px;
 }
 
 .family {
@@ -46,33 +33,29 @@ body {
 }
 
 .button {
-  position: absolute;
   color: rgb(255, 255, 255);
   background-color: blue;
   width: 216px;
   height: 50px;
-  top: 430px;
-  left: 692px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-vertical-align: middle;  
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  width: 216px;
+  height: 50px;
+  margin-left: 500px;
+  border-radius: 5px;
 }
- .ourt {
+.ourt {
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
-/* 
-.chim {
-  position: absolute;
-  width: 366px;
-  height: 42px;
+
+
+  /* position: absolute; */
+  /* width: 366px;
+  height: 42px; */
   /* top: 966px;
   left: 617px; */
   /* font-weight: 700;
@@ -80,45 +63,21 @@ vertical-align: middle;
   /* line-height: 100%;
   letter-spacing: 0.03em;
   /* text-align: center; */
- */ */
-
-.button {
-  position: absolute;
-  color: #ffffff;
-  background-color: blue;
-  width: 216px;
-  height: 50px;
-  top: 430px;
-  left: 692px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .uvaga h2 {
   width: 270px;
   height: 16px;
-  top: 774px;
-  left: 215px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0.03em;
 }
 
 .uvaga p {
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-/* 
+
+
 .chim {
   width: 366px;
   height: 42px;
@@ -129,15 +88,15 @@ vertical-align: middle;
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
-} */
+}
 
-/* .img  {
+/* /* .img  {
     width: 370px;
     height: 294px;
     top: 1058px;
     left: 215px;
     
-} */
+}
 
 /* .container {
  
@@ -145,24 +104,38 @@ vertical-align: middle;
   padding: 10px;        
   margin: 10px;           
   border-radius: 15px;
-}  */
-
-/* 
+} 
+/*  */
 .ourt {
-   font-weight: 700;
-   size: 36px;
-   line-height: 100%;
-   letter-spacing: 3%;
-   align-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  size: 36px;
+  color: #757575;
 }
 
- */
-
- .container {
+/* .container {
     width: 1200px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     border: solid red;
-} 
+}  */
+.e {
+
+  width: 45px;
+  height: 16px;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.s {
+  width: 72px;
+  height: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.w {
+  font-family: "Roboto", sans-serif;
+  width: 64px;
+  height: 16px;
+}
