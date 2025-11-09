@@ -1,8 +1,17 @@
 body {
  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
-.logo {
-        
+.header-logo {
   font-family: "Raleway", sans-serif;
+
   }
+  
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
