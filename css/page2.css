@@ -1,6 +1,10 @@
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto" , sans-serif;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo {
@@ -9,16 +13,124 @@ body {
   font-size: 26px;
 }
 
-.footer-logo {
-  font-family: "Raleway", sans-serif;
+.header-logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.header-a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header-a:hover {
+  color: #2196f3;
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-mailto {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.main {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.main-a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.main-a:hover {
+  color: #2196f3;
+}
+
+.portfolio {
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
+
+.main-img {
+  width: 370px;
+  height: 294px;
+}
+
+.main-h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.main-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-mailto {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
