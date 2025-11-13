@@ -38,7 +38,7 @@ body {
   margin-right: auto;
 }
 
-.topnav {
+.header-nav {
   display: flex;
   flex-direction: row;
   gap: 50px;
