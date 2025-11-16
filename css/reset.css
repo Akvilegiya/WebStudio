@@ -11,3 +11,7 @@ ul {
 a {
     text-decoration: 0;
 }
+
+button {
+    border: 0px;
+}

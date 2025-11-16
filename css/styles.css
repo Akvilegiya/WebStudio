@@ -41,7 +41,7 @@ body {
 .header-nav {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  
   align-items: center;
   margin-right: auto;
   margin-left: 93px;
@@ -84,6 +84,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 50px;
 }
 
 .header-mailto:hover,
@@ -114,7 +115,9 @@ body {
   text-align: center;
   color: #fff;
   max-width: 696px;
+  padding-bottom: 30px;
 }
+
 
 .main-button {
   font-weight: 700;
@@ -129,6 +132,10 @@ body {
   height: 50px;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.main-button:hover {
+  cursor: pointer;
 }
 
 .Uvahasec {
@@ -148,6 +155,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  padding: 10px;
 }
 
 .Uvaga-p {
@@ -159,7 +167,6 @@ body {
 }
 
 .section2 {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -206,6 +213,7 @@ body {
 
 .section3 {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 
 .section3-ourteam {
