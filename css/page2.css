@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
 }
 
-
+/* ------------------ HEADER ------------------ */
 
 .header {
   padding-top: 24px;
@@ -12,7 +12,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -46,18 +46,18 @@ body {
 
 .header-mailto,
 .header-tel {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    color: #757575;
-    text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  text-decoration: none;
 }
 
 .header-mailto:hover,
 .header-tel:hover {
-    color: #2196F3; 
+  color: #2196F3;
 }
 
+/* ------------------ MAIN ------------------ */
 
 .main {
   padding-top: 94px;
@@ -71,44 +71,38 @@ body {
 }
 
 .main-btn {
-    padding: 6px 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.03em;
-    border: none;
-    background: #F5F4FA;
-    border-radius: 4px;
-    color: #212121;
-    cursor: pointer;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  border: none;
+  background: #F5F4FA;
+  border-radius: 4px;
+  color: #212121;
+  cursor: pointer;
 }
 
 .main-btn:hover,
 .main-btn:focus {
-    background: #2196F3;
-    color: #fff;
+  background: #2196F3;
+  color: #fff;
 }
 
-
-
-.main-a:hover {
-  color: #2196f3; 
-}
-
+/* ------------------ GRID — INFORMATION ------------------ */
 
 .information {
   padding-bottom: 114px;
 }
 
 .info {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   gap: 30px;
   margin-top: 34px;
 }
 
 .info-li {
-  width: 370px; 
+  width: 100%;
 }
 
 .info-img {
@@ -136,6 +130,7 @@ body {
   color: #757575;
 }
 
+/* ------------------ FOOTER ------------------ */
 
 .footer {
   background: #2f303a;
@@ -175,6 +170,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* ------------------ CONTAINER ------------------ */
 
 .container {
   width: 1200px;
