@@ -2,7 +2,7 @@ body {
   font-family: "Roboto";
 }
 
-/* ------------------ HEADER ------------------ */
+
 
 .header {
   padding-top: 24px;
@@ -57,7 +57,7 @@ body {
   color: #2196F3;
 }
 
-/* ------------------ MAIN ------------------ */
+
 
 .main {
   padding-top: 94px;
@@ -88,7 +88,6 @@ body {
   color: #fff;
 }
 
-/* ------------------ GRID — INFORMATION ------------------ */
 
 .information {
   padding-bottom: 114px;
@@ -130,7 +129,7 @@ body {
   color: #757575;
 }
 
-/* ------------------ FOOTER ------------------ */
+
 
 .footer {
   background: #2f303a;
@@ -170,7 +169,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ------------------ CONTAINER ------------------ */
 
 .container {
   width: 1200px;
