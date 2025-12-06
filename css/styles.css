@@ -41,7 +41,7 @@ body {
 .header-nav {
   display: flex;
   flex-direction: row;
-  
+
   align-items: center;
   margin-right: auto;
   margin-left: 93px;
@@ -118,7 +118,6 @@ body {
   padding-bottom: 30px;
 }
 
-
 .main-button {
   font-weight: 700;
   font-size: 16px;
@@ -156,6 +155,58 @@ body {
   text-transform: uppercase;
   color: #212121;
   padding: 10px;
+}
+
+.Uvaga-h2::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url("./Group\ 1.png");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.Punktualnist::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url("./clock\ 1.png");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.Plan::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url("./diagram\ 1.png");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.Future::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url("./astronaut\ 1.png");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 .Uvaga-p {
