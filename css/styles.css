@@ -104,7 +104,7 @@ body {
 }
 
 .header-tel {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
@@ -122,13 +122,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
+  justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background: #2f303a;
   background-image:
     linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("./fon.png");
+  text-align: center;
 }
 
 .main-h1 {
@@ -137,10 +138,10 @@ body {
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: #fff;
   max-width: 696px;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .main-button {
@@ -155,7 +156,6 @@ body {
   width: 216px;
   height: 50px;
   border-radius: 5px;
-  margin: 0 auto;
 }
 
 .main-button:hover {
@@ -179,7 +179,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding: 10px;
+  text-align: center;
 }
 
 .Uvaga-h2::before {
@@ -188,7 +188,6 @@ body {
   width: 270px;
   height: 120px;
   background-image: url("./Group\ 1.png");
-  align-items: center;
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   background-position: center;
@@ -201,7 +200,6 @@ body {
   width: 270px;
   height: 120px;
   background-image: url("./clock\ 1.png");
-  align-items: center;
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   background-position: center;
@@ -214,7 +212,6 @@ body {
   width: 270px;
   height: 120px;
   background-image: url("./diagram\ 1.png");
-  align-items: center;
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   background-position: center;
@@ -227,7 +224,6 @@ body {
   width: 270px;
   height: 120px;
   background-image: url("./astronaut\ 1.png");
-  align-items: center;
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   background-position: center;
@@ -273,7 +269,27 @@ body {
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
-  max-width: 366%;
+}
+
+.section2-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.section2-baground {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+  text-align: center;
 }
 
 .section2-chimf {
@@ -283,8 +299,9 @@ body {
 }
 
 .section2-chimf li img {
-  width: 370px;
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 .section3 {
@@ -311,29 +328,37 @@ body {
   fill: #afb1b8;
 }
 
-.ourt-div {
+.ourt-link {
   height: 44px;
   width: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.ourt-item {
+  list-style: none;
 }
 
 .bog {
   display: flex;
   gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .add {
   margin-left: 32px;
 }
 
-.ourt-div:hover {
+.ourt-link:hover {
   background-color: #2196f3;
 }
 
-.ourt-div:hover .ourt-svg {
+.ourt-link:hover .ourt-svg {
   fill: #fff;
 }
 
@@ -346,7 +371,6 @@ body {
 }
 
 .section3-li {
-  padding-bottom: 30px;
 }
 
 .section3-h3 {
@@ -364,7 +388,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .section3-card {
@@ -449,6 +473,7 @@ body {
   display: flex;
   gap: 70px;
   width: 100%;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -507,10 +532,13 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-li {
- 
+  list-style: none;
 }
 
 .footer-a-svg {

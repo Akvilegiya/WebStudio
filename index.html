@@ -34,14 +34,21 @@
                     </li>
                 </ul>
                 <div class="header-div">
-                    <svg class="header-svg">
-                        <use href="./fotos/symbol-defs.svg#icon-email"></use>
+                    <svg class="header-svg" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z" />
                     </svg>
                     <a class="header-mailto header-mailto-ho" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </div>
                 <div class="header-div header-div-ho">
-                    <svg class="header-svg">
-                        <use href="./fotos/symbol-defs.svg#icon-phone"></use>
+                    <svg class="header-svgg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" />
+                        <path
+                            d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z"
+                            fill="#757575" />
                     </svg>
                     <a class="header-tel header-tel-ho" href="tel:+380961111111">+38 096 111 11 11</a>
                 </div>
@@ -84,9 +91,16 @@
             <div class="container">
                 <h2 class="section2-chim">Чим ми займаємося</h2>
                 <ul class="section2-chimf">
-                    <li class="section2-li"> <img class="section2-img" src="./fotos/laptop.png" alt="Foto"></li>
-                    <li class="section2-li"> <img class="section2-img" src="./fotos/phone.png" alt="Foto"></li>
-                    <li class="section2-li"> <img class="section2-img" src="./fotos/tablet.png" alt="Foto"></li>
+                    <li class="section2-li">
+                        <img class="section2-img" src="./fotos/laptop.png" alt="Foto">
+                        <p class="section2-baground">Десктопні додатки</p>
+                    </li>
+                    <li class="section2-li"> <img class="section2-img" src="./fotos/phone.png" alt="Foto">
+                        <p class="section2-baground">Мобільні додатки</p>
+                    </li>
+                    <li class="section2-li"> <img class="section2-img" src="./fotos/tablet.png" alt="Foto">
+                        <p class="section2-baground">Дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -99,28 +113,36 @@
                             <img class="section3-img" src="./fotos/man.png" alt="Foto">
                             <h3 class="section3-h3">Ігор Дем'яненко</h3>
                             <p class="section3-p">Product Designer</p>
-                            <div class="bog">
-                                <div class="ourt-div add">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-linkedin-1"></use>
-                                    </svg>
-                                </div>
-                            </div>
+                            <ul class="bog">
+                                <li class="ourt-item add">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="section3-li1">
@@ -128,29 +150,36 @@
                             <img class="section3-img" src="./fotos/woman.jpg" alt="Foto">
                             <h3 class="section3-h3">Ольга Рєпіна</h3>
                             <p class="section3-p">Frontend Developer</p>
-                            <div class="bog">
-                                <div class="ourt-div add">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-linkedin-1"></use>
-                                    </svg>
-                                </div>
-                            </div>
+                            <ul class="bog">
+                                <li class="ourt-item add">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="section3-li">
@@ -158,30 +187,36 @@
                             <img class="section3-img" src="./fotos/man2.png" alt="Foto">
                             <h3 class="section3-h3">Микола Тарасов</h3>
                             <p class="section3-p">Marketing</p>
-                            <div class="bog">
-                                <div class="ourt-div add">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-
-                                        <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-
-                                    </svg>
-                                </div>
-                                <div class="ourt-div">
-                                    <svg class="ourt-svg">
-                                        <use href="./fotos/symbol-defs.svg#icon-linkedin-1"></use>
-                                    </svg>
-                                </div>
-                            </div>
+                            <ul class="bog">
+                                <li class="ourt-item add">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="section3-li">
@@ -189,28 +224,36 @@
                             <img class="section3-img" src="./fotos/man3.png" alt="Foto">
                             <h3 class="section3-h3">Михайло Єрмаков</h6>
                                 <p class="section3-p">UI Designer</p>
-                                <div class="bog">
-                                    <div class="ourt-div add">
-                                        <svg class="ourt-svg">
-                                            <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="ourt-div">
-                                        <svg class="ourt-svg">
-                                            <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="ourt-div">
-                                        <svg class="ourt-svg">
-                                            <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="ourt-div">
-                                        <svg class="ourt-svg">
-                                            <use href="./fotos/symbol-defs.svg#icon-linkedin-1"></use>
-                                        </svg>
-                                    </div>
-                                </div>
+                                <ul class="bog">
+                                    <li class="ourt-item add">
+                                        <a class="ourt-link" href="">
+                                            <svg class="ourt-svg">
+                                                <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="ourt-item">
+                                        <a class="ourt-link" href="">
+                                            <svg class="ourt-svg">
+                                                <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="ourt-item">
+                                        <a class="ourt-link" href="">
+                                            <svg class="ourt-svg">
+                                                <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="ourt-item">
+                                        <a class="ourt-link" href="">
+                                            <svg class="ourt-svg">
+                                                <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                         </div>
                     </li>
                 </ul>
@@ -272,7 +315,8 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <p class="footer-logo" style="color: #2196F3;">Web<span style="color: rgb(255, 255, 255);">Studio</span></p>
+                    <p class="footer-logo" style="color: #2196F3;">Web<span
+                            style="color: rgb(255, 255, 255);">Studio</span></p>
                     <address class="footer-adr">
                         <p class="footer-p"> м. Київ, пр-т Лесі Українки, 26</p>
                         <a class="footer-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -284,30 +328,30 @@
                     <ul class="footer-ul">
                         <li class="footer-li">
                             <a href="" class="footer-a-svg">
-                            <svg class="footer-svg">
-                                <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
+                                <svg class="footer-svg">
+                                    <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="footer-li">
                             <a href="" class="footer-a-svg">
-                            <svg class="footer-svg">
-                                <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
+                                <svg class="footer-svg">
+                                    <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="footer-li">
                             <a href="" class="footer-a-svg">
-                            <svg class="footer-svg">
-                                <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
+                                <svg class="footer-svg">
+                                    <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
                         </li>
                         <li class="footer-li">
-                        <a href="" class="footer-a-svg">
-                            <svg class="footer-svg">
-                                <use href="./fotos/symbol-defs.svg#icon-linkedin-1"></use>
-                            </svg>
+                            <a href="" class="footer-a-svg">
+                                <svg class="footer-svg">
+                                    <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
