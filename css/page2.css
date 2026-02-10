@@ -193,6 +193,10 @@ body {
   gap: 70px;
   width: 100%;
 }
+/* Match main page footer baseline alignment */
+.footer-content {
+  align-items: baseline;
+}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
