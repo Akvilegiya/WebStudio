@@ -47,22 +47,9 @@ body {
   align-items: center;
 }
 
-
-
 .header-div:hover {
   color: #2196f3;
 }
-
-.header-div:hover .header-svg  {
-  fill: #2196f3;
-}
-
-.header-div:hover .header-svgg {
-  fill: #2196f3;
-}
- 
-
-
 
 .header-svg {
   width: 16px;
@@ -76,6 +63,19 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: #757575;
+}
+
+.header-div:hover .header-svg {
+  fill: #2196f3;
+}
+
+.header-div:hover .header-svgg {
+  fill: #2196f3;
+}
+
+.header-div:hover .header-mailto,
+.header-div:hover .header-tel {
+  color: #2196f3;
 }
 
 .header-a {
@@ -146,7 +146,6 @@ body {
   list-style: none;
   justify-content: center;
   align-content: flex-end;
-  
 }
 
 .info-li {
@@ -285,4 +284,81 @@ body {
 
 .footer-a-svg:hover .footer-svg {
   fill: #fff;
+}
+
+.footer-place {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.footer-h5-place {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-ul-place {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-li-place {
+}
+
+.footer-input-place {
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.footer-input-place::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input-place:focus {
+  outline: solid 1px #2196f3;
+  border-color: #2196f3;
+}
+
+.footer-button-place {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  align-items: baseline;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+
+.footer-svg-place {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
 }
