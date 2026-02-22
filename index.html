@@ -29,7 +29,7 @@
                 <ul class="header-list">
                     <li><a class="header-a header-a-ho" href="./index.html">Студія</a></li>
                     <li><a class="header-a header-a-ho" href="./page2.html">Портфоліо</a></li>
-                    <li><a class="header-a header-a-ho" href="./page3.html">Контакти</a></li>
+                    <li><button class="header-a header-a-ho" href="" data-modal-open>Контакти</button></li>
 
                     </li>
                 </ul>
@@ -362,8 +362,7 @@
                         <li class="footer-li-place aka"><button class="footer-button-place">Підписатися<svg
                                     class="footer-svg-place" xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
-                                         />
+                                        d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" />
                                 </svg></button>
                         </li>
                     </ul>
@@ -371,7 +370,78 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal-window">
+
+            <button class="modal-close-btn" data-modal-close type="button">
+                ✖
+            </button>
+
+            <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+            </h2>
+
+            <form class="modal-form">
+
+                <div class="modal-field">
+                    <label class="modal-label">Ім'я</label>
+                    <div class="modal-input-wrap">
+                        <input class="modal-input" type="text" name="user-name" required>
+                        <svg class="modal-svg"" viewBox="0 0 32 32">
+                            <path
+                                d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-field">
+                    <label class="modal-label">Телефон</label>
+                    <div class="modal-input-wrap">
+                        <input class="modal-input" type="tel" name="user-phone" required>
+                        <svg class="modal-svg"  viewBox="0 0 32 32">
+                            <path
+                                d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-field">
+                    <label class="modal-label">Пошта</label>
+                    <div class="modal-input-wrap">
+                        <input class="modal-input" type="email" name="user-email" required>
+                        <svg class="modal-svg"  viewBox="0 0 32 32">
+                            <path
+                                d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-field">
+                    <label class="modal-label">Коментар</label>
+                    <textarea class="modal-textarea" name="user-comment" placeholder="Введіть текст"></textarea>
+                </div>
+
+                <label class="modal-checkbox">
+                    <input class="modal-galochka" type="checkbox" name="policy" required>
+                   <p class="modal-checkbox-p">Погоджуюся з розсилкою та приймаю</p> 
+                    <span class="modal-span"><a href="" class="modal-a">Умови договору</a></span>
+                </label>
+
+                <button type="submit" class="modal-submit">
+                    Відправити
+                </button>
+
+            </form>
+        </div>
     </div>
+
+
+    <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
