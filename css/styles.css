@@ -630,6 +630,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  align-items: baseline;
 }
 
 .footer .container {
@@ -678,6 +679,10 @@ body {
 
 .footer-tel:hover {
   color: #2196f3;
+}
+
+.join {
+  margin-right: 93px;
 }
 
 .footer-h4 {
@@ -754,6 +759,9 @@ body {
 }
 
 .footer-li-place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-input-place {
@@ -789,7 +797,9 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-  align-items: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #2196f3;
   border: none;
   border-radius: 4px;
@@ -802,6 +812,7 @@ body {
   height: 24px;
   fill: #ffffff;
   margin-left: 10px;
+  
 }
 
 .modal-backdrop {
@@ -966,7 +977,7 @@ body {
 .modal-checkbox {
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
