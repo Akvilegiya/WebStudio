@@ -29,9 +29,9 @@
                 <ul class="header-list">
                     <li><a class="header-a header-a-ho" href="./index.html">Студія</a></li>
                     <li><a class="header-a header-a-ho" href="./page2.html">Портфоліо</a></li>
-                    <li><button class="header-a header-a-ho"  data-modal-open>Контакти</button></li>
+                    <li><button class="header-a header-a-ho">Контакти</button></li>
 
-                    </li>
+
                 </ul>
                 <div class="header-div">
                     <svg class="header-svg" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@
         <section id="section1" class="main-base">
             <div class="container">
                 <h1 class="main-h1">Ефективні рішення для вашого бізнесу</h1>
-                <button class="main-button" type="button">Замовити послугу</button>
+                <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section id="section2" class="Uvahasec">
@@ -101,7 +101,7 @@
                 </ul>
             </div>
         </section>
-        <section id="section3" class="section3">
+        <section class="section3">
             <div class="container">
                 <h2 class="section3-ourt">Наша команда</h2>
                 <ul class="section3-ourteam">
@@ -219,38 +219,38 @@
                     <li class="section3-li">
                         <div class="section3-card">
                             <img class="section3-img" src="./fotos/man3.png" alt="Foto">
-                            <h3 class="section3-h3">Михайло Єрмаков</h6>
-                                <p class="section3-p">UI Designer</p>
-                                <ul class="bog">
-                                    <li class="ourt-item add">
-                                        <a class="ourt-link" href="">
-                                            <svg class="ourt-svg">
-                                                <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="ourt-item">
-                                        <a class="ourt-link" href="">
-                                            <svg class="ourt-svg">
-                                                <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="ourt-item">
-                                        <a class="ourt-link" href="">
-                                            <svg class="ourt-svg">
-                                                <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="ourt-item">
-                                        <a class="ourt-link" href="">
-                                            <svg class="ourt-svg">
-                                                <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <h3 class="section3-h3">Михайло Єрмаков</h3>
+                            <p class="section3-p">UI Designer</p>
+                            <ul class="bog">
+                                <li class="ourt-item add">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ourt-item">
+                                    <a class="ourt-link" href="">
+                                        <svg class="ourt-svg">
+                                            <use href="./fotos/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -371,25 +371,28 @@
         </div>
     </footer>
 
+    <form action="">
+        <div class="modal-backdrop is-hidden" data-modal>
+            <div class="modal-window">
 
-    <div class="modal-backdrop is-hidden" data-modal>
-        <div class="modal-window">
+                <button class="modal-close-btn" data-modal-close type="button">
+                    <svg class="krest" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" />
+                    </svg>
+                </button>
 
-            <button class="modal-close-btn" data-modal-close type="button">
-                ✖
-            </button>
+                <h2 class="modal-title">
+                    Залиште свої дані, ми вам передзвонимо
+                </h2>
 
-            <h2 class="modal-title">
-                Залиште свої дані, ми вам передзвонимо
-            </h2>
 
-            <form class="modal-form">
-
+                <div class="batya">
                 <div class="modal-field">
                     <label class="modal-label">Ім'я</label>
                     <div class="modal-input-wrap">
                         <input class="modal-input" type="text" name="user-name" required>
-                        <svg class="modal-svg"" viewBox="0 0 32 32">
+                        <svg class="modal-svg" viewBox="0 0 32 32">
                             <path
                                 d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
                             </path>
@@ -401,7 +404,7 @@
                     <label class="modal-label">Телефон</label>
                     <div class="modal-input-wrap">
                         <input class="modal-input" type="tel" name="user-phone" required>
-                        <svg class="modal-svg"  viewBox="0 0 32 32">
+                        <svg class="modal-svg" viewBox="0 0 32 32">
                             <path
                                 d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
                             </path>
@@ -413,7 +416,7 @@
                     <label class="modal-label">Пошта</label>
                     <div class="modal-input-wrap">
                         <input class="modal-input" type="email" name="user-email" required>
-                        <svg class="modal-svg"  viewBox="0 0 32 32">
+                        <svg class="modal-svg" viewBox="0 0 32 32">
                             <path
                                 d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
                             </path>
@@ -423,12 +426,12 @@
 
                 <div class="modal-field">
                     <label class="modal-label">Коментар</label>
-                    <textarea class="modal-textarea" name="user-comment" placeholder="Введіть текст"></textarea>
+                    <textarea class="modal-textarea" placeholder="Введіть текст"></textarea>
                 </div>
 
                 <label class="modal-checkbox">
                     <input class="modal-galochka" type="checkbox" name="policy" required>
-                   <p class="modal-checkbox-p">Погоджуюся з розсилкою та приймаю</p> 
+                    <p class="modal-checkbox-p">Погоджуюся з розсилкою та приймаю</p>
                     <span class="modal-span"><a href="" class="modal-a">Умови договору</a></span>
                 </label>
 
@@ -436,9 +439,10 @@
                     Відправити
                 </button>
 
-            </form>
-        </div>
+    </form>
     </div>
+    </div>
+
 
 
     <script type="module" src="./js/modal.js"></script>
