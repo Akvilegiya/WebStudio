@@ -247,8 +247,6 @@ body {
   width: 100%;
 }
 
-
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -526,6 +524,9 @@ body {
   width: 448px;
   height: 40px;
   padding-left: 42px;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal-svg {
@@ -535,6 +536,9 @@ body {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+   transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal-textarea {
