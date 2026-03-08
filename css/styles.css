@@ -5,10 +5,9 @@ body {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 15px;
 }
 
 .header {
@@ -471,7 +470,7 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition-property:  color border-color;
+  transition-property: color border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -489,7 +488,7 @@ body {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition-property:  fill;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -512,17 +511,8 @@ body {
   background-color: #2f303a;
 }
 
-.footer .container {
-  display: flex;
-  gap: 70px;
-}
 
-.footer-content {
-  display: flex;
-  gap: 70px;
-  width: 100%;
-  align-items: baseline;
-}
+
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -603,7 +593,6 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .footer-a-svg:hover {
@@ -684,12 +673,10 @@ body {
 
 .footer .container {
   display: flex;
-  gap: 70px;
 }
 
 .footer-content {
   display: flex;
-  gap: 70px;
   width: 100%;
   align-items: baseline;
 }
@@ -705,12 +692,14 @@ body {
   flex-direction: column;
   gap: 9px;
   margin-top: 20px;
-  font-style: normal;
+  
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #fff;
+
+  
 }
 
 .footer-mailto,
@@ -731,7 +720,8 @@ body {
 }
 
 .join {
-  margin-right: 93px;
+  margin-left: 70px;
+  margin-right: auto;
 }
 
 .footer-h4 {
@@ -834,8 +824,6 @@ body {
 }
 
 .sh {
-  padding-left: 70px;
-  padding-right: auto;
 }
 
 .footer-input-place:focus {
@@ -942,10 +930,7 @@ body {
   width: 479px;
   height: 40px;
   padding-left: 42px;
-  
 }
-
-
 
 .modal-svg {
   position: absolute;
