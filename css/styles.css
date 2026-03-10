@@ -930,6 +930,9 @@ body {
   width: 479px;
   height: 40px;
   padding-left: 42px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-svg {
