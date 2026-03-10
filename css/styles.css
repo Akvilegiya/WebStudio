@@ -868,6 +868,7 @@ body {
   justify-content: center;
   opacity: 1;
   visibility: visible;
+
 }
 
 .is-hidden {
@@ -876,7 +877,13 @@ body {
   visibility: hidden;
 }
 
+.is-hidden > .modal-window {
+transform: scale(0);
+}
+
+
 .modal-window {
+  transform: scale(1);
   position: relative;
   width: 528px;
   background-color: white;
@@ -885,6 +892,9 @@ body {
   padding-bottom: 39px;
   padding-right: 40px;
   border-radius: 4px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .krest {
