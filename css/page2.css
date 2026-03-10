@@ -200,6 +200,7 @@ body {
 
 .solo {
   position: relative;
+  overflow: hidden;
 }
 
 .info-pa {
@@ -216,14 +217,21 @@ body {
   left: 0;
   padding: 63px 24px;
   opacity: 0;
-  transition-property: opacity;
+  transform: translateY(100%);
+  transition-property: opacity  transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.info-pa:hover {
-  opacity: 1;
-}
+.solo:hover {
+  
+  .info-pa {
+    opacity: 1;
+   transform: translateY(0);
+  }
+  
+} 
 
 .info-h2 {
   font-size: 18px;
