@@ -219,10 +219,10 @@ body {
   text-align: center;
 }
 
-.Uvaga-h2::before {
+.detali::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-image: url("./Group\ 1.png");
   background-repeat: no-repeat;
@@ -234,7 +234,7 @@ body {
 .Punktualnist::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-image: url("./clock\ 1.png");
   background-repeat: no-repeat;
@@ -246,7 +246,7 @@ body {
 .Plan::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-image: url("./diagram\ 1.png");
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ body {
 .Future::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-image: url("./astronaut\ 1.png");
   background-repeat: no-repeat;
@@ -511,9 +511,6 @@ body {
   background-color: #2f303a;
 }
 
-
-
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -692,14 +689,12 @@ body {
   flex-direction: column;
   gap: 9px;
   margin-top: 20px;
-  
+
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #fff;
-
-  
 }
 
 .footer-mailto,
@@ -868,7 +863,6 @@ body {
   justify-content: center;
   opacity: 1;
   visibility: visible;
-
 }
 
 .is-hidden {
@@ -878,9 +872,8 @@ body {
 }
 
 .is-hidden > .modal-window {
-transform: scale(0);
+  transform: scale(0);
 }
-
 
 .modal-window {
   transform: scale(1);
@@ -952,6 +945,9 @@ transform: scale(0);
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
@@ -1113,5 +1109,3 @@ transform: scale(0);
   font-weight: bold;
   cursor: pointer;
 }
-
-

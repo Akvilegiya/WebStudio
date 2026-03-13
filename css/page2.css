@@ -221,7 +221,6 @@ body {
   transition-property: opacity  transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .solo:hover {
@@ -334,7 +333,7 @@ body {
 .footer-ul {
   display: flex;
   flex-direction: row;
-
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
