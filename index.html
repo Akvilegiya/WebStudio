@@ -12,8 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-<link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
 <body>
@@ -356,7 +358,8 @@
                 <div class="footer-place">
                     <h5 class="footer-h5-place">Підпишіться на розсилку</h5>
                     <ul class="footer-ul-place">
-                        <li class="footer-li-place"><input class="footer-input-place" type="text" placeholder="E-mail"  required>
+                        <li class="footer-li-place"><input class="footer-input-place" type="text" placeholder="E-mail"
+                                required>
                         </li>
                         <li class="footer-li-place aka"><button class="footer-button-place">Підписатися<svg
                                     class="footer-svg-place" xmlns="http://www.w3.org/2000/svg">
@@ -370,10 +373,11 @@
         </div>
     </footer>
 
-    <form action="">
-        <div class="modal-backdrop is-hidden" data-modal>
-            <div class="modal-window">
 
+    <div class="modal-backdrop is-hidden" data-modal>
+
+        <div class="modal-window">
+            <form action="">
                 <button class="modal-close-btn" data-modal-close type="button">
                     <svg class="krest" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -387,59 +391,59 @@
 
 
                 <div class="batya">
-                <div class="modal-field">
-                    <label class="modal-label">Ім'я</label>
-                    <div class="modal-input-wrap">
-                        <input class="modal-input" type="text" name="user-name" required>
-                        <svg class="modal-svg" viewBox="0 0 32 32">
-                            <path
-                                d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
-                            </path>
-                        </svg>
+                    <div class="modal-field">
+                        <label class="modal-label">Ім'я</label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="text" name="user-name" required>
+                            <svg class="modal-svg" viewBox="0 0 32 32">
+                                <path
+                                    d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
+                                </path>
+                            </svg>
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-field">
-                    <label class="modal-label">Телефон</label>
-                    <div class="modal-input-wrap">
-                        <input class="modal-input" type="tel" name="user-phone" required>
-                        <svg class="modal-svg" viewBox="0 0 32 32">
-                            <path
-                                d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
-                            </path>
-                        </svg>
+                    <div class="modal-field">
+                        <label class="modal-label">Телефон</label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="tel" name="user-phone" required>
+                            <svg class="modal-svg" viewBox="0 0 32 32">
+                                <path
+                                    d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                                </path>
+                            </svg>
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-field">
-                    <label class="modal-label">Пошта</label>
-                    <div class="modal-input-wrap">
-                        <input class="modal-input" type="email" name="user-email" required>
-                        <svg class="modal-svg" viewBox="0 0 32 32">
-                            <path
-                                d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
-                            </path>
-                        </svg>
+                    <div class="modal-field">
+                        <label class="modal-label">Пошта</label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="email" name="user-email" required>
+                            <svg class="modal-svg" viewBox="0 0 32 32">
+                                <path
+                                    d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
+                                </path>
+                            </svg>
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-field">
-                    <label class="modal-label">Коментар</label>
-                    <textarea class="modal-textarea" placeholder="Введіть текст"></textarea>
-                </div>
+                    <div class="modal-field">
+                        <label class="modal-label">Коментар</label>
+                        <textarea class="modal-textarea" placeholder="Введіть текст"></textarea>
+                    </div>
 
-                <label class="modal-checkbox">
-                    <input class="modal-galochka" type="checkbox" name="policy" required>
-                    <p class="modal-checkbox-p">Погоджуюся з розсилкою та приймаю</p>
-                    <span class="modal-span"><a href="" class="modal-a">Умови договору</a></span>
-                </label>
+                    <label class="modal-checkbox">
+                        <input class="modal-galochka" type="checkbox" name="policy" required>
+                        <p class="modal-checkbox-p">Погоджуюся з розсилкою та приймаю</p>
+                        <span class="modal-span"><a href="" class="modal-a">Умови договору</a></span>
+                    </label>
 
-                <button type="submit" class="modal-submit">
-                    Відправити
-                </button>
+                    <button type="submit" class="modal-submit">
+                        Відправити
+                    </button>
 
-    </form>
-    </div>
+            </form>
+        </div>
     </div>
 
 
