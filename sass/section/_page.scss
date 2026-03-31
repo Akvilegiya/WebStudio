@@ -1,4 +1,4 @@
-
+@use "../base/colors" as *;
 
 .main {
   padding-top: 94px;
@@ -35,8 +35,8 @@
 
 .main-btn:hover,
 .main-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: $accent-color;
+  color: $main-color;
 }
 
 .information {
@@ -48,54 +48,50 @@
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
-}
 
-.info-li {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.info-li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-}
-
-.solo {
-  position: relative;
-  overflow: hidden;
-}
-
-.info-pa {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  color: #fff;
-  background-color: rgba(33, 150, 243, 0.9);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition-property: opacity  transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.solo:hover {
-  
-  .info-pa {
-    opacity: 1;
-   transform: translateY(0);
+  &__card {
+    background: $main-color;
+    border: 1px solid $portfolio-line;
+    flex-basis: calc((100% - 60px) / 3);
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow:$team-shadow;
+    }
   }
-  
-} 
 
-.info-h2 {
+  &__solo {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .info__pa {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__pa {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color:$main-color;
+    background-color: $card-owerlay;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: opacity transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__boss {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -105,16 +101,21 @@
   line-height: 34px;
 }
 
-.info-p {
+&__text{
   font-size: 16px;
-  color: #757575;
+  color:$text-color;
   margin-bottom: 20px;
   margin-left: 24px;
   line-height: 34px;
 }
 
-.info_img {
+&__foto {
   width: 100%;
 }
+
+}
+
+
+
 
 

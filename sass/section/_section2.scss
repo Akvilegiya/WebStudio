@@ -1,65 +1,55 @@
+
+@use "../base/colors" as *;
+
 .section2 {
   padding-bottom: 94px;
-}
 
-.section2-chim {
+&__chim {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $title-color;
   margin-bottom: 50px;
 }
 
-.section2-title {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-}
-
-.section2-chim-list {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-top: 50px;
-}
-
-/* .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
-.section2-chimf {
+&__chimf {
   display: flex;
   gap: 30px;
   list-style: none;
 }
 
-.section2-chimf li img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.section2-li {
+&__list {
   position: relative;
   overflow: hidden;
 }
 
-.section2-baground {
+&__baground {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $main-color;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: $gradient;
   padding: 27px 0;
   text-align: center;
 }
+
+
+&__foto {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+}
+
+
+
+
+
+
