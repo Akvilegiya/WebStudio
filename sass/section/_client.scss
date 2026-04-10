@@ -15,11 +15,13 @@
     margin-bottom: 50px;
   }
 
-  &__ul {
+  &__headofthelist {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
+
+
   &__list {
     width: 170px;
     height: 92px;
@@ -31,16 +33,16 @@
 
     &:hover {
       border-color: $accent-color;
-      .clients__to {
+      .clients__link {
         color: $accent-color;
       }
-      .clients__svg {
+      .clients__icon {
         fill: $accent-color;
       }
     }
   }
 
-  &__to {
+  &__link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -49,7 +51,7 @@
     color: $client-border;
   }
 
-  &__svg {
+  &__icon {
     width: 106px;
     height: 60px;
     fill: $client-border;

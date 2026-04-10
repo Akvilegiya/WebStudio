@@ -16,7 +16,7 @@
     font-size: 26px;
   }
 
-  &__adr {
+  &__address {
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -52,7 +52,7 @@
     margin-bottom: 20px;
   }
 
-  &__ul {
+  &__headofthelist {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -61,11 +61,9 @@
     margin: 0;
   }
 
-  &__li {
-    list-style: none;
-  }
 
-  &__href {
+
+  &__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -87,7 +85,7 @@
     }
   }
 
-  &__svg {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: $main-color;
@@ -96,19 +94,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .footer__join {
+  &__join {
     margin-left: 70px;
     margin-right: auto;
   }
 
-  &__place {
+  &__subscribe{
     display: flex;
     flex-direction: column;
     gap: 9px;
     margin-top: 20px;
   }
 
-  &__sub {
+  &__subtext {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
@@ -117,6 +115,7 @@
     color: $main-color;
     margin-bottom: 20px;
   }
+
   &__sublist {
     display: flex;
     flex-direction: row;
@@ -125,7 +124,8 @@
     padding: 0;
     margin: 0;
   }
-  &__subto {
+
+  &__placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +174,7 @@
     height: 50px;
   }
 
-  &__svgtelega {
+  &__telegaicon{
     width: 24px;
     height: 24px;
     fill: $main-color;

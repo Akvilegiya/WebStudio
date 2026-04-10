@@ -6,7 +6,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &__ourt {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -14,7 +14,7 @@
     color: $title-color;
   }
 
-  &__ourteam {
+  &__headofthelist {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -30,13 +30,13 @@
     padding-bottom: 30px;
   }
 
-  &__img {
+  &__foto {
     width: 270px;
     height: 260px;
     padding-bottom: 30px;
   }
 
-  &__h3 {
+  &__text {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -45,7 +45,7 @@
     margin-bottom: 10px;
   }
 
-  &__p {
+  &__subtext {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -54,21 +54,17 @@
     margin-bottom: 30px;
   }
 
-  &__bog {
+  &__svglist {
     display: flex;
     gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-left: 32px;
   }
 
-  &__tem {
-    list-style: none;
-  }
 
-  &__add {
-    margin-left: 32px;
-  }
+ 
 
   &__link {
     height: 44px;
@@ -85,7 +81,7 @@
     }
   }
 
-  &__svg {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: $client-border;
@@ -97,7 +93,7 @@
   &__link:hover {
     fill:$main-color;
 
-    svg {
+    .team__icon {
       fill: $main-color;
     }
   }
