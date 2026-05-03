@@ -3,12 +3,34 @@
 .Uvahasec {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .Uvaga {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
   &__text {
     font-weight: 700;
@@ -17,6 +39,26 @@
     text-transform: uppercase;
     color: $title-color;
     text-align: center;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: #212121;
+      border-radius: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: justify;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-align: justify;
+    }
   }
 
   &__detali::before {
@@ -34,6 +76,20 @@
     animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+     @media screen and (min-width: 480px) {
+      width: 450px;
+      border-radius: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border-radius: 4px;
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__punktualnist::before {
@@ -51,6 +107,20 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      border-radius: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border-radius: 4px;
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__plan::before {
@@ -68,6 +138,20 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      border-radius: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border-radius: 4px;
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__future::before {
@@ -85,6 +169,20 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      border-radius: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border-radius: 4px;
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__about {
@@ -93,6 +191,18 @@
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $text-color;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 278px;
+    }
   }
 }
 

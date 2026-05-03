@@ -5,37 +5,76 @@
   padding-bottom: 94px;
   background-color: $main-color;
 
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__text {
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: $text-color;
+    color: #212121;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 
   &__headofthelist {
     display: flex;
     justify-content: center;
     gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
   }
-
 
   &__list {
     width: 170px;
     height: 92px;
     border: 1px solid $client-border;
     border-radius: 4px;
-    transition-property: color border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    @media screen and (min-width: 480px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - (2 * 30px)) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
+
+    &:hover,
+    &:focus-within {
       border-color: $accent-color;
-      .clients__link {
-        color: $accent-color;
-      }
+
       .clients__icon {
         fill: $accent-color;
       }
@@ -49,14 +88,17 @@
     align-items: center;
     justify-content: center;
     color: $client-border;
+    outline: none;
+
+    &:focus .clients__icon {
+      fill: $accent-color;
+    }
   }
 
   &__icon {
     width: 106px;
     height: 60px;
-    fill: $client-border;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

@@ -1,55 +1,57 @@
-
 @use "../base/colors" as *;
 
 .section2 {
   padding-bottom: 94px;
 
-&__title {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: $title-color;
-  margin-bottom: 50px;
-}
+  @media screen and (min-width:480px) {
+    display: none;
+  }
 
-&__headofthelist {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-&__list {
-  position: relative;
-  overflow: hidden;
-}
-
-&__baground {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $main-color;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: $gradient;
-  padding: 27px 0;
-  text-align: center;
-}
-
-
-&__foto {
-  width: 100%;
-  height: auto;
+@media screen and (min-width:1200px) {
   display: block;
 }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+    margin-bottom: 50px;
+
+  
+  }
+
+  &__headofthelist {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  &__list {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__baground {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $gradient;
+    padding: 27px 0;
+    text-align: center;
+  }
+
+  &__foto {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
-
-
-
-
-
-

@@ -8,6 +8,13 @@
   &__content {
     display: flex;
     align-items: baseline;
+
+    @media screen and (min-width: 480px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__logo {
@@ -61,8 +68,6 @@
     margin: 0;
   }
 
-
-
   &__link {
     width: 44px;
     height: 44px;
@@ -97,13 +102,21 @@
   &__join {
     margin-left: 70px;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      margin: 0;
+    }
   }
 
-  &__subscribe{
+  &__subscribe {
     display: flex;
     flex-direction: column;
     gap: 9px;
     margin-top: 20px;
+
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   &__subtext {
@@ -123,6 +136,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__placeholder {
@@ -174,7 +193,7 @@
     height: 50px;
   }
 
-  &__telegaicon{
+  &__telegaicon {
     width: 24px;
     height: 24px;
     fill: $main-color;

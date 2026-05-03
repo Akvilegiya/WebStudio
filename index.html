@@ -19,36 +19,36 @@
 <body>
     <header class="header">
         <div class="container header__container">
-
-            <p class="header__logo">
+            <a href="./index.html" class="header__logo" style="text-decoration: none;">
                 Web<span style="color: #000;">Studio</span>
-            </p>
+            </a>
 
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li><a class="header__navigation header-a-ho" href="./index.html">Студія</a></li>
-                    <li><a class="header__navigation header-a-ho" href="./page2.html">Портфоліо</a></li>
-                    <li><button class="header__navigation header-a-ho">Контакти</button></li>
-
-
+                    <li><a class="header__navigation" href="./index.html">Студія</a></li>
+                    <li><a class="header__navigation" href="./page2.html">Портфоліо</a></li>
+                    <li><a class="header__navigation" href="#">Контакти</a></li>
                 </ul>
-                <div class="header__svgpack">
-                    <svg class="header__firstsvgtype" xmlns="http://www.w3.org/2000/svg">
+            </nav>
+
+            <div class="header__iconlist">
+                <a class="header__svgpack" href="mailto:info@devstudio.com">
+                    <svg class="header__firstsvgtype">
+                        <use href="./images/icons.svg#icon-envelope"></use>
                         <path
                             d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z" />
                     </svg>
-                    <a class="header__mailto header__mailto-ho" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </div>
-                <div class="header__phonesvg">
-                    <svg class="header__secondsvgtype" xmlns="http://www.w3.org/2000/svg">
+                    <span class="header__mailto">info@devstudio.com</span>
+                </a>
+
+                <a class="header__phonesvg" href="tel:+380961111111">
+                    <svg class="header__secondsvgtype">
                         <path
                             d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" />
-                        <path
-                            d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z" />
                     </svg>
-                    <a class="header__tel header__tel-ho" href="tel:+380961111111">+38 096 111 11 11</a>
-                </div>
-            </nav>
+                    <span class="header__tel">+38 096 111 11 11</span>
+                </a>
+            </div>
         </div>
     </header>
     <main class="main__scss">
@@ -58,26 +58,26 @@
                 <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <section id="section2" class="Uvahasec">
+         <section id="section2" class="Uvahasec">
             <div class="container">
                 <ul class="Uvaga">
-                    <li class="Uvaga-box">
+                    <li class="Uvaga__box">
                         <h2 class="Uvaga__text Uvaga__detali">УВАГА ДО ДЕТАЛЕЙ</h2>
                         <p class="Uvaga__about">Ідейні міркування, і навіть початок повсякденної роботи з формування
                             позиції.
                         </p>
                     </li>
-                    <li class="Uvaga-box">
+                    <li class="Uvaga__box">
                         <h2 class="Uvaga__text Uvaga__punktualnist">ПУНКТУАЛЬНІСТЬ</h2>
                         <p class="Uvaga__about">Завдання організації, особливо рамки і місце навчання кадрів тягне у
                             себе.
                         </p>
                     </li>
-                    <li class="Uvaga-box">
+                    <li class="Uvaga__box">
                         <h2 class="Uvaga__text Uvaga__plan">ПЛАНУВАННЯ</h2>
                         <p class="Uvaga__about">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="Uvaga-box">
+                    <li class="Uvaga__box">
                         <h2 class="Uvaga__text Uvaga__future">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                         <p class="Uvaga__about">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.
@@ -85,8 +85,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section id="section3" class="section2">
+            </section>
+            <section id="section3" class="section2">
             <div class="container">
                 <h2 class="section2__title">Чим ми займаємося</h2>
                 <ul class="section2__headofthelist">
@@ -378,78 +378,78 @@
     </footer>
 
 
-    <div class="modal__backdrop is-hidden" data-modal>
+            <div class="modal__backdrop is-hidden" data-modal>
 
-        <div class="modal__window">
-            <form action="">
-                <button class="modal__close" data-modal-close type="button">
-                    <svg class="modal__krest" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" />
-                    </svg>
-                </button>
-                <h2 class="modal__title">
-                    Залиште свої дані, ми вам передзвонимо
-                </h2>
-                <div class="batya">
-                    <div class="modal__field">
-                        <label class="modal__label">Ім'я</label>
-                        <div class="modal__input__wrap">
-                            <input class="modal__input" type="text" name="user-name" required>
-                            <svg class="modal__svg" viewBox="0 0 32 32">
+                <div class="modal__window">
+                    <form action="">
+                        <button class="modal__close" data-modal-close type="button">
+                            <svg class="modal__krest" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
-                                </path>
+                                    d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" />
                             </svg>
-                        </div>
-                    </div>
+                        </button>
+                        <h2 class="modal__title">
+                            Залиште свої дані, ми вам передзвонимо
+                        </h2>
+                        <div class="batya">
+                            <div class="modal__field">
+                                <label class="modal__label">Ім'я</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input" type="text" name="user-name" required>
+                                    <svg class="modal__svg" viewBox="0 0 32 32">
+                                        <path
+                                            d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.333 0-16 2.667-16 8v4h32v-4c0-5.333-10.667-8-16-8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
 
-                    <div class="modal__field">
-                        <label class="modal__label">Телефон</label>
-                        <div class="modal__input__wrap">
-                            <input class="modal__input" type="tel" name="user-phone" required>
-                            <svg class="modal__svg" viewBox="0 0 32 32">
-                                <path
-                                    d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
+                            <div class="modal__field">
+                                <label class="modal__label">Телефон</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input" type="tel" name="user-phone" required>
+                                    <svg class="modal__svg" viewBox="0 0 32 32">
+                                        <path
+                                            d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
 
-                    <div class="modal__field">
-                        <label class="modal__label">Пошта</label>
-                        <div class="modal__input__wrap">
-                            <input class="modal__input" type="email" name="user-email" required>
-                            <svg class="modal__svg" viewBox="0 0 32 32">
-                                <path
-                                    d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
+                            <div class="modal__field">
+                                <label class="modal__label">Пошта</label>
+                                <div class="modal__input__wrap">
+                                    <input class="modal__input" type="email" name="user-email" required>
+                                    <svg class="modal__svg" viewBox="0 0 32 32">
+                                        <path
+                                            d="M28 4h-24c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM28 8l-12 7.5-12-7.5v-2l12 7.5 12-7.5v2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
 
-                    <div class="modal__field">
-                        <label class="modal__label">Коментар</label>
-                        <textarea class="modal__textarea" placeholder="Введіть текст"></textarea>
-                    </div>
+                            <div class="modal__field">
+                                <label class="modal__label">Коментар</label>
+                                <textarea class="modal__textarea" placeholder="Введіть текст"></textarea>
+                            </div>
 
-                    <label class="modal__checkbox">
-                        <input class="modal__galochka" type="checkbox" name="policy" required>
-                        <p class="modal__checkboxtxt">Погоджуюся з розсилкою та приймаю</p>
-                        <span class="modal__span"><a href="" class="modal__link">Умови договору</a></span>
-                    </label>
+                            <label class="modal__checkbox">
+                                <input class="modal__galochka" type="checkbox" name="policy" required>
+                                <p class="modal__checkboxtxt">Погоджуюся з розсилкою та приймаю</p>
+                                <span class="modal__span"><a href="" class="modal__link">Умови договору</a></span>
+                            </label>
 
-                    <button type="submit" class="modal__submit">
-                        Відправити
-                    </button>
+                            <button type="submit" class="modal__submit">
+                                Відправити
+                            </button>
 
-            </form>
-        </div>
-    </div>
+                    </form>
+                </div>
+            </div>
+        
 
 
-
-    <script type="module" src="./js/modal.js"></script>
+            <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
