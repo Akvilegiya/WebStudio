@@ -1021,20 +1021,49 @@ body {
 }
 .footer__content {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__content {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+}
+@media screen and (min-width: 480px) {
+  .footer__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: justify;
+  }
 }
 .footer__address {
   display: flex;
@@ -1048,12 +1077,71 @@ body {
   letter-spacing: 0.03em;
   color: #FFF;
 }
+@media screen and (min-width: 480px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
+}
+.footer__city {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .footer__city {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__city {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__city {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+}
 .footer__mailto, .footer__tel {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #FFF;
+}
+@media screen and (min-width: 480px) {
+  .footer__mailto, .footer__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__mailto, .footer__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailto, .footer__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
 }
 .footer__mailto:hover, .footer__tel:hover {
   color: #2196f3;
@@ -1066,6 +1154,33 @@ body {
   text-transform: uppercase;
   color: #FFF;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer__text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 65px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 .footer__headofthelist {
   display: flex;
@@ -1110,6 +1225,12 @@ body {
     margin: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    margin-left: 70px;
+    margin-right: auto;
+  }
+}
 .footer__subscribe {
   display: flex;
   flex-direction: column;
@@ -1145,10 +1266,26 @@ body {
     align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__sublist {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .footer__placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__placeholder {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__placeholder {
+    margin: 0;
+  }
 }
 .footer__input {
   border-radius: 4px;

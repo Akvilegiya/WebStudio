@@ -7,13 +7,20 @@
 
   &__content {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-    @media screen and (min-width: 480px) {
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 
@@ -21,6 +28,24 @@
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.03em;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: justify;
+    }
   }
 
   &__address {
@@ -34,6 +59,38 @@
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $main-color;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__city {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__mailto,
@@ -43,6 +100,27 @@
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $main-color;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
 
     &:hover {
       color: $accent-color;
@@ -57,6 +135,31 @@
     text-transform: uppercase;
     color: $main-color;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-align: center;
+
+      margin-top: 65px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
   }
 
   &__headofthelist {
@@ -106,6 +209,11 @@
     @media screen and (min-width: 480px) {
       margin: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-right: auto;
+    }
   }
 
   &__subscribe {
@@ -116,6 +224,9 @@
 
     @media screen and (min-width: 480px) {
       flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
     }
   }
 
@@ -142,12 +253,25 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
   }
 
   &__input {
