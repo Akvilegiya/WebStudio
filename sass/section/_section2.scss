@@ -2,9 +2,10 @@
 
 .section2 {
   padding-bottom: 94px;
+  display: none;
 
   @media screen and (min-width:480px) {
-    display: none;
+    
   }
 
 @media screen and (min-width:1200px) {

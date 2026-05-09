@@ -577,8 +577,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .Uvaga__detali::before {
-    border-radius: 4px;
     width: 354px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -754,11 +754,7 @@ body {
 }
 .section2 {
   padding-bottom: 94px;
-}
-@media screen and (min-width: 480px) {
-  .section2 {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .section2 {
@@ -1291,13 +1287,18 @@ body {
 }
 .footer__input {
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   outline: 1px solid rgba(255, 255, 255, 0.3);
   border: none;
   background: transparent;
   color: #FFF;
   padding: 0 10px;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 .footer__input::-moz-placeholder {
   font-family: var(--font-family);
